@@ -9,6 +9,8 @@ def preprocess_data(filepath):
     df['month'] = df['dteday'].dt.month
     df['weekday'] = df['dteday'].dt.weekday
 
+
+    # Drop unwanted columns
     df = df.drop(columns=['instant', 'dteday', 'casual', 'registered'])
 
     return df
