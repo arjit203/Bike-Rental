@@ -20,5 +20,6 @@ def evaluate_model(model, X_test, y_test):
     plt.plot(y_pred, label='Predicted')
     plt.legend()
     plt.title("Actual vs Predicted Rentals")
-    plt.savefig('../visuals/actual_vs_predicted.png')
+    plt.savefig('./visuals/ScatterPlot_Actual_vs_Predicted.png')
+
     plt.show()
